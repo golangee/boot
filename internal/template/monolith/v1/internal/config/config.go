@@ -7,8 +7,10 @@ import (
 	"io/ioutil"
 	"os"
 	"path/filepath"
-	"{{.Package}}/internal/errors"
+	"{{.Path}}/internal/errors"
 )
+
+const Filename = "{{.BinaryName}}.json"
 
 // Settings contains the minimal bootstrapping configuration
 type Settings struct {
@@ -31,7 +33,7 @@ func LoadFile(filename string) (s Settings, err error) {
 		return Default(), fmt.Errorf("config file '%s'cannot be opened: %w", filename, err)
 	}
 
-	defer errors.Try(file.Close, &err)
+	defer errors.Check(file.Close, &err)
 
 	r, err := Load(file)
 	if err != nil {

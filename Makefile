@@ -1,0 +1,3 @@
+generate: ## Executes go generate
+
+	${GO} generate ./...

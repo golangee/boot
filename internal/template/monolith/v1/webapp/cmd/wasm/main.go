@@ -1,7 +1,7 @@
 package main
 
 import (
-	"{{.Package}}/internal/application"
+	"{{.Path}}/webapp/internal/application"
 )
 
 func main() {

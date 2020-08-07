@@ -4,12 +4,11 @@ import (
 	"flag"
 	"github.com/golangee/log"
 	zap "github.com/golangee/log-zap"
-	_ "{{.Package}}" // reflectplus metadata
-	"{{.Package}}/build"
-	"{{.Package}}/internal/application"
-	"{{.Package}}/internal/config"
 	"os"
 	"path/filepath"
+	"{{.Path}}/internal/application"
+	"{{.Path}}/internal/build"
+	"{{.Path}}/internal/config"
 )
 
 func main() {

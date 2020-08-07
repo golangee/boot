@@ -19,11 +19,11 @@ mkdir mymonolith && cd mymonolith
 # create your go server module
 go mod init mycompany.com/mymonolith
 
-# create a cmd which is always called to perform code (re)-generation
-mkdir -p cmd/gen
-
 # add the boot dependency
 go get github.com/golangee/boot
+
+# create a cmd which is always called to perform code (re)-generation
+mkdir -p cmd/gen
 
 # create the boot-generate file
 cat > cmd/gen/main.go << EOL
@@ -35,10 +35,7 @@ import (
 )
 
 func main() {
-    err := boot.Generate()
-    if err != nil{
-        panic(err)
-    }
+    boot.MustGenerate()
 }
 
 EOL
@@ -65,3 +62,19 @@ make run # the 'play' button
 This setup is known to work nicely with the [Goland IDE](https://www.jetbrains.com/go/) but others like VSCode may also work.
 Just open the server project. Keep in mind, that intentionally you cannot mix data structures between client
 and server. Try to rely solely on your REST definition - a client is always regenerated.
+
+## alternative tutorial
+If you don't like `go generate`, you can also use the standalone version:
+
+```bash
+GO111MODULE=off go get install github.com/golangee/boot/cmd/bootee
+bootee -dir /Users/tschinke/tmp/goblub/mymonolith
+``` 
+
+Afterwards you can continue with the generated makefile (but keep in mind that you need the invocation
+for every re-generation):
+
+```bash
+make help # which targets are available?
+make run # the 'play' button
+```

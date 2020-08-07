@@ -1,0 +1,10 @@
+github.com/dave/jennifer v1.4.0/go.mod h1:fIb+770HOpJ2fmN9EPPKOqm1vMGhB+TwXKMZhrIygKg=
+github.com/golangee/forms v0.0.0-20200616133830-7a9198db74c0 h1:gaS6vt/yubhbFhOH0JoEO+99R2URHZ1+VtBHs4xMCnA=
+github.com/golangee/forms v0.0.0-20200616133830-7a9198db74c0/go.mod h1:rPS5UDs4pXTKBDV/gJjuYI7huMREaBodCg41LRsKw3g=
+github.com/golangee/i18n v0.0.0-20200603170212-b3411a83a78d/go.mod h1:PEkODyDtj85SF5Dtk62gJOX0UtbxlZrV1/je2eynmIw=
+github.com/golangee/log v0.0.0-20200527135508-039216fb6009/go.mod h1:3bn9K3Qv+nn37RGViudYamNme1p/xf5olDp5Qehf6w8=
+github.com/golangee/uuid v0.0.0-20200513144043-882c55e8ee6c/go.mod h1:i+BaPFNyXGweWAc/GX3OniM1pz/m1qLja81YgJZOrMQ=
+github.com/google/uuid v1.1.1/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
+github.com/iancoleman/strcase v0.0.0-20191112232945-16388991a334/go.mod h1:SK73tn/9oHe+/Y0h39VT4UCxmurVJkR5NA7kMEAOgSE=
+golang.org/x/text v0.3.2/go.mod h1:bEr9sfX3Q8Zfm5fL9x+3itogRgK3+ptLWKqgva+5dAk=
+golang.org/x/tools v0.0.0-20180917221912-90fa682c2a6e/go.mod h1:n7NCudcB/nEzxVGmLbDWY5pfWTLqBcC2KZ6jyYvM4mQ=
