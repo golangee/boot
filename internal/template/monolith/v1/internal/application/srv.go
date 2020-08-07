@@ -2,12 +2,13 @@ package application
 
 import (
 	"github.com/golangee/forms/theme/material"
-	"internal.nobuild/monolith/v1/internal/build"
+	gzipped "github.com/lpar/gzipped/v2"
 	"log"
 	"net/http"
 	"path"
 	"strconv"
 	"strings"
+	"{{.Path}}/internal/build"
 )
 
 
